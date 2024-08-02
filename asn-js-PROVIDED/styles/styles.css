@@ -23,10 +23,9 @@ body {
 }
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
-
-
- 
-
+.flex {
+    display: flex;
+}
 /************* site-wide text styling *************/
 
 /* TO DO:
@@ -41,14 +40,46 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
+h1 {
+    font-size: 48px;
+    margin: auto;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.large-text {
+    font-size: 24px;
+}
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: solid 1px black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+main a:hover {
+    text-decoration: underline;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.fake-button:hover {
+    text-decoration: underline;
+    background-color:#4278e5;
+    color: white;
+    cursor: pointer;
+}
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color:#4278e5;
+    color: white;
+    cursor: pointer;
 
-
-
-
-
-
-
-
+}
 /************* header/footer styling *************/
 
 /* TO DO:
@@ -58,12 +89,28 @@ body {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall with 26px of space around the contents, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
-
-
-
-
-
-
+header {
+    background-color: #E5AF42;
+    height: 150px;
+    margin-bottom: 25px;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+footer {
+    background-color: #E5AF42;
+    height: 60px;
+    padding: 26px;
+    font-weight: 200px;
+    text-align: center;
+}
+main{
+    margin-bottom: 50px;
+}
 /************* index page *************/
 
 /* TO-DO: 
@@ -73,12 +120,22 @@ body {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
-
-
-
-
-
-
+img{
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+h2{
+    line-height: 36px;
+}
+main p{
+    margin-bottom: 12px;
+}
+.fake-button{
+    width: 250px;
+    margin-left: 150px;
+    text-align: center;
+}
 /************* bookings page *************/
 
 /* TO-DO:
